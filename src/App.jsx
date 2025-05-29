@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-const MoviesPage = lazy(() => import("./pages/MoviePage/MoviePage"));
+const MoviesPage = lazy(() => import("./pages/MoviePage/MoviesPage"));
 
 const MovieDetailsPage = lazy(() =>
   import("./pages/MovieDetailsPage/MovieDetailsPage")

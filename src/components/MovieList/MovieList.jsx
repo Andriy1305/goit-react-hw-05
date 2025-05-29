@@ -1,23 +1,23 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./MovieList.module.css";
 
-const MovieList = ({ movies, onMovieClick }) => {
+const MovieList = ({ movies }) => {
+  const location = useLocation();
+
   return (
     <ul className={styles.list}>
       {movies.map((movie) => (
-        <li
-          key={movie.id}
-          className={styles.listItem}
-          onClick={() => onMovieClick(movie.id)}
-          tabIndex={0} // щоб можна було фокусувати для клавіатури
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              onMovieClick(movie.id);
-            }
-          }}
-          role="button" // для доступності
-        >
-          {movie.title}
+        <li key={movie.id} className={styles.listItem}>
+          <Link
+            to={{
+              pathname: `/movies/${movie.id}`,
+            }}
+            state={{ from: location }}
+            className={styles.link}
+          >
+            {movie.title}
+          </Link>
         </li>
       ))}
     </ul>
