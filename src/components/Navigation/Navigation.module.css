@@ -1,0 +1,29 @@
+.nav {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.activeLink {
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.link:hover,
+.link:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: default;
+}

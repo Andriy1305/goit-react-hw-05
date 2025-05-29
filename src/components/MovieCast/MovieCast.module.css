@@ -1,0 +1,26 @@
+.castList {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.castItem {
+  width: 70px;
+  text-align: center;
+}
+
+.castImage {
+  width: 70px;
+
+  height: 120px;
+  object-fit: cover;
+}
+
+.castName {
+  font-weight: 600;
+  font-size: 8px;
+  color: #333;
+  margin: 0;
+}

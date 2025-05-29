@@ -1,0 +1,22 @@
+.tittle {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}

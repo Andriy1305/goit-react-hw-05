@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.item {
+  width: 250px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: center;
+  color: #333;
+}

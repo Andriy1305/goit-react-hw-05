@@ -1,0 +1,130 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.goBackBtn {
+  padding: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+.goBackBtn:hover,
+.goBackBtn:focus {
+  background: none !important;
+  border-color: inherit !important;
+  color: inherit !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  border: none !important;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.poster {
+  width: 70px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.additional {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.additional ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+  margin: 0;
+}
+
+.additional a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 8px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+}
+
+.tittle {
+  font-size: 14px;
+  margin: 0;
+}
+
+.p {
+  font-size: 8px;
+  margin: 0;
+}
+
+.h {
+  font-size: 8px;
+  margin: 0;
+}
+
+.overview {
+  font-size: 8px;
+  margin: 0;
+}
+
+.genders {
+  font-size: 8px;
+  margin: 0;
+}
+
+.some {
+  font-size: 8px;
+  margin: 0;
+}
+
+.add {
+  margin: 0;
+  font-size: 14px;
+}
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.reviewItem {
+  width: 100%;
+}
+
+.reviewAuthor {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.reviewContent {
+  font-size: 12px;
+  line-height: 1.4;
+}
